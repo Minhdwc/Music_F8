@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main_player">
+        <div class="player">
+            <div class="dashboard">
+                <header>
+                    <div class="down">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="center_header">
+                        <h4>Now playing</h4>
+                        <h2>See you again</h2>
+                    </div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </header>
+            </div>
+            <div class="image">
+                <img src="./Img/2h.jpg" alt="">
+            </div>
+            <div class="controls">
+                <div class="undo">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <div class="prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="play">
+                    <i class="fas fa-play play_control"></i>
+                    <i class="fas fa-pause pause"></i>
+                </div>
+                <div class="next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio src="" id="audio"></audio>
+        </div>
+        <div class="play_list">
+            
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
